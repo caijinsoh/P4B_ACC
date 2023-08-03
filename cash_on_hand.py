@@ -1,4 +1,4 @@
-from pathlib import Path
+from pathlib import Path 
 import csv
 
 def compute_cash_difference(file_path):
