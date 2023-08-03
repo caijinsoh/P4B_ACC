@@ -28,6 +28,3 @@ def compute_cash_difference(file_path):
                 highest_surplus_day = day
 
     return deficit_cash, highest_surplus, highest_surplus_day
-print("hello")
-print("bye")
-print("dog")
