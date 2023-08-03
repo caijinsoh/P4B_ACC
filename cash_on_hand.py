@@ -31,3 +31,4 @@ def compute_cash_difference(file_path):
 print("hello")
 print("bye")
 print("dog")
+print("hi")
