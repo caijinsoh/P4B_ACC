@@ -12,7 +12,7 @@ def main():
 
         if deficit_cash:
             for day, amount in deficit_cash:
-                file.write(f"[CASH DEFICIT] Day: {day}, Deficit: USD {amount} \n")  # Format changed here
+                file.write(f"[CASH DEFICIT] DAY: {day}, AMOUNT: USD {amount} \n")  # Format changed here
         else:
             file.write("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n")
             file.write(f"[HIGHEST CASH SURPLUS] DAY: {highest_surplus_day}, AMOUNT: USD {highest_surplus}")
