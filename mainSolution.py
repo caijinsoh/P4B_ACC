@@ -8,7 +8,7 @@ def main():
     profit_decrease_details, highest_increase, highest_increase_day = profit_and_loss.compute_profit_difference('profitsandloss.csv')
 
     with open("summary_report.txt", "w") as file:
-        file.write(f"[HIGHEST OVERHEAD] {highest_category.split(',')[0]}: {round(highest_overhead_percentage, 2)}%\n")
+        file.write(f"[HIGHEST OVERHEAD] {highest_category.split(',')[0].upper()}: {round(highest_overhead_percentage, 2)}%\n")
 
         if deficit_cash:
             for day, amount in deficit_cash:
