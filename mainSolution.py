@@ -12,28 +12,17 @@ def main():
 
         if deficit_cash:
             for day, amount in deficit_cash:
-<<<<<<< HEAD
                 file.write(f"[CASH DEFICIT] Day: {day}, Deficit: USD {amount} \n")  # Format changed here
         else:
             file.write("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n")
             file.write(f"[HIGHEST CASH SURPLUS] DAY: {highest_surplus_day}, AMOUNT: USD {highest_surplus}")
-=======
-                file.write(f"[CASH DEFICIT] Day {day}: Deficit: USD {amount} \n")
-        else:
-            file.write("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n")
-            file.write(f"[HIGHEST CASH SURPLUS] DAY: {highest_surplus_day} ,AMOUNT: USD {highest_surplus}")
->>>>>>> 11ae9093d20058e6a429cb57aa6ba848ba0c6f88
 
         if profit_decrease_details:
             for day, amount in profit_decrease_details:
                 file.write(f"[PROFIT DEFICIT] DAY: {day}, AMOUNT: USD {amount}\n")
         else:
             file.write(f"[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN PREVIOUS DAY.\n")
-<<<<<<< HEAD
             file.write(f"[HIGHEST NET PROFIT SURPLUS] DAY: {highest_increase_day}, AMOUNT: USD {highest_increase}")
-=======
-            file.write(f"[HIGHEST NET PROFIT SURPLUS] DAY: {highest_increase_day} ,AMOUNT: USD {highest_increase}")
->>>>>>> 11ae9093d20058e6a429cb57aa6ba848ba0c6f88
 
 if __name__ == "__main__":
     main()
