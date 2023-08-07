@@ -2,8 +2,10 @@ import csv
 from pathlib import Path
 
 def compute_profit_difference(file_path):
-    # Opens the CSV file containing profit data and initialize variables for calculations.
-    with open(file_path, 'r') as file:
+    # Get the absolute path to the CSV file
+    csv_path = Path("csv_reports") / file_path
+
+    with open(csv_path, 'r') as file:
         reader = csv.reader(file)
         next(reader)  # Skip header
 
