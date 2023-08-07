@@ -20,7 +20,7 @@ def main():
         # Checks if there is any deficit cash. If so, write each deficit to the file.
         if len(deficit_cash) != 0:
             for day, amount in deficit_cash:
-                file.write(f"[CASH DEFICIT] Day {day}: Deficit: USD {amount} \n")
+                file.write(f"[CASH DEFICIT] DAY: {day}, AMOUNT: USD {amount} \n")
         else:
             # If there is no deficit cash, this indicates there is a surplus and write the highest surplus to the file.
             file.write("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n")
