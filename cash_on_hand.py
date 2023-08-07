@@ -35,4 +35,4 @@ def compute_cash_difference(file_path):
 
     return deficit_cash, highest_surplus, highest_surplus_day
 
-deficit_cash, highest_surplus_value, highest_surplus_day = compute_cash_differnce("cashonhand.csv")
+deficit_cash, highest_surplus_value, highest_surplus_day = compute_cash_difference("cashonhand.csv")
