@@ -4,7 +4,7 @@ import csv
 def compute_cash_difference(file_path):
     # Get the absolute path to the CSV file
     csv_path = Path("csv_reports") / file_path
-
+    
     with open(csv_path, 'r') as file:
         reader = csv.reader(file)
         next(reader) # Skip reader

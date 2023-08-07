@@ -10,7 +10,7 @@ def compute_profit_difference(file_path):
         next(reader)  # Skip header
 
         previous_profit = 0
-        profit_decrease_details = []  # List to store days and corresponding profit decreases.
+        profit_decrease_details = []  # Empty list to store days and corresponding profit decreases.
         highest_increase = 0  # Variable to keep track of the highest profit increase.
         highest_increase_day = None  # Variable to store the day with the highest profit increase.
 
