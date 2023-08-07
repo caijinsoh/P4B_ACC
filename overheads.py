@@ -8,15 +8,10 @@ def find_highest_overhead_category(filename):
     total_expense = 0
     highest_overhead_percentage = 0
 
-<<<<<<< HEAD
     # Get the absolute path to the CSV file
     csv_path = Path("csv_reports") / filename
 
     with open(csv_path, 'r') as file:
-=======
-    # Opens the CSV file and read its contents.
-    with open(filename, 'r') as file:
->>>>>>> 01a94e30135ee8229e884772e3b5216c052718eb
         reader = csv.reader(file)
         next(reader)  # Skip the header row
 
@@ -39,13 +34,14 @@ def find_highest_overhead_category(filename):
     # Returns the highest overhead category and its percentage.
     return highest_category, highest_overhead_percentage
 
-<<<<<<< HEAD
+
 # Call the function
 result_category, result_percentage = find_highest_overhead_category("Overhead.csv")
 
-=======
+
 # Calls the function with the file name "Overhead.csv" to find the highest overhead category and percentage.
 find_highest_overhead_category("Overhead.csv")
 
+
 print("bye")
->>>>>>> 01a94e30135ee8229e884772e3b5216c052718eb
+
