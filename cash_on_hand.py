@@ -2,12 +2,12 @@ from pathlib import Path
 import csv
 
 def compute_cash_differnce(file_path):
-    # Read data from the CSV file and store it in an empty list-cash_on_hand.
+    # Read data from the CSV file 
     with open (file_path,"r") as file:
         reader = csv.reader(file)
         next(reader) # Skip reader
 
-        cash_on_hand = []
+        cash_on_hand = []  # Create empty list to store values
         
         for row in reader:
             cash_on_hand.append([int(row[0]), int(row[1])])
