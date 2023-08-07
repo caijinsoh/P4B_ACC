@@ -37,3 +37,4 @@ def compute_cash_differnce(file_path):
 
     # Return the deficit_cash list, highest_surplus amount, and the day with the highest surplus.
     return deficit_cash, highest_surplus, highest_surplus_day
+print("hello")
