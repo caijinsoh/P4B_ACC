@@ -1,7 +1,11 @@
 import csv
+from pathlib import Path
 
 def compute_profit_difference(file_path):
-    with open(file_path, 'r') as file:
+    # Get the absolute path to the CSV file
+    csv_path = Path("c:/Users/sohcj/OneDrive/Desktop/IGP 4 P4B Team A/P4B_ACC-1/csv_reports") / file_path
+
+    with open(csv_path, 'r') as file:
         reader = csv.reader(file)
         next(reader)  # Skip header
 
@@ -25,9 +29,9 @@ def compute_profit_difference(file_path):
             previous_profit = profit
 
         return profit_decrease_details, highest_increase, highest_increase_day
-compute_profit_difference("profitsandloss.csv")
 
+# Create the relative file path to the CSV file
+file_path = Path("profitsandloss.csv")
 
-
-
-
+# Call the function and print the results
+profit_decrease, highest_increase_value, highest_increase_day = compute_profit_difference(file_path)

@@ -2,7 +2,10 @@ from pathlib import Path
 import csv
 
 def compute_cash_difference(file_path):
-    with open(file_path, 'r') as file:
+    # Get the absolute path to the CSV file
+    csv_path = Path("c:/Users/sohcj/OneDrive/Desktop/IGP 4 P4B Team A/P4B_ACC-1/csv_reports") / file_path
+
+    with open(csv_path, 'r') as file:
         reader = csv.reader(file)
         next(reader)  # Skip header
 
@@ -28,6 +31,5 @@ def compute_cash_difference(file_path):
                 highest_surplus_day = day
 
     return deficit_cash, highest_surplus, highest_surplus_day
-print("hello")
-print("bye")
-print("dog")
+
+deficit_cash, highest_surplus_value, highest_surplus_day = compute_cash_difference("cashonhand.csv")
