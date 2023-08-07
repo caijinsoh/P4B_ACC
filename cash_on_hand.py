@@ -3,7 +3,7 @@ import csv
 
 def compute_cash_difference(file_path):
     # Get the absolute path to the CSV file
-    csv_path = Path("c:/Users/sohcj/OneDrive/Desktop/IGP 4 P4B Team A/P4B_ACC-1/csv_reports") / file_path
+    csv_path = Path("csv_reports") / file_path
 
     with open(csv_path, 'r') as file:
         reader = csv.reader(file)
