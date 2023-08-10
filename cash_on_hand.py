@@ -20,7 +20,7 @@ def compute_cash_difference(file_path):
     highest_surplus = 0
     highest_surplus_day = None
 
-    # Loop through the cash_on_hand list to calculate the dificit cash and find the highest surplus.
+    # Loop through the cash_on_hand list to calculate the deficit cash and find the highest surplus.
     for i in range(1, len(cash_on_hand)):
         day, cash = cash_on_hand[i]
         prev_day, prev_cash = cash_on_hand[i - 1]
